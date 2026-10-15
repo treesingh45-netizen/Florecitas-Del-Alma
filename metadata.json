@@ -1,0 +1,6 @@
+{
+  "name": "Florecitas Del Alma - Florist in Tolleson, Arizona",
+  "description": "More than flowers, a feeling. Handcrafted floral arrangements, roses, bouquets, and custom flowers in Tolleson, AZ with delivery and pickup.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
