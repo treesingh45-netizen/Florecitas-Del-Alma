@@ -223,8 +223,8 @@ export const HomePage: React.FC = () => {
             <div className="relative">
               <div className="aspect-4/5 rounded-sm overflow-hidden border border-[#E9E0D4] shadow-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1567696911980-2eed69a46042?auto=format&fit=crop&w=900&q=80"
-                  alt="Florist carefully arranging delicate garden blooms in artisan studio"
+                  src="https://images.pexels.com/photos/6641388/pexels-photo-6641388.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  alt="Woman in beige sweater smelling a freshly arranged bouquet of artisan garden flowers"
                   className="w-full h-full object-cover"
                 />
               </div>

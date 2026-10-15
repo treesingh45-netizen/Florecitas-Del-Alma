@@ -66,7 +66,7 @@ const ShopContext = createContext<ShopContextType | undefined>(undefined);
 
 const STORAGE_KEYS = {
   CART: 'florecitas_cart_v1',
-  PRODUCTS: 'florecitas_products_v1',
+  PRODUCTS: 'florecitas_products_v2',
   ORDERS: 'florecitas_orders_v1',
   INQUIRIES: 'florecitas_inquiries_v1',
   MESSAGES: 'florecitas_messages_v1',
@@ -88,11 +88,21 @@ export const ShopProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [activePolicyModal, setActivePolicyModal] = useState<'privacy' | 'terms' | 'delivery' | null>(null);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
 
-  // Products
+  // Products - initialize with default catalog and ensure image updates are applied
   const [products, setProducts] = useState<FlowerProduct[]>(() => {
     try {
       const saved = localStorage.getItem(STORAGE_KEYS.PRODUCTS);
-      return saved ? JSON.parse(saved) : INITIAL_PRODUCTS;
+      if (saved) {
+        const parsed: FlowerProduct[] = JSON.parse(saved);
+        return parsed.map(item => {
+          const initial = INITIAL_PRODUCTS.find(p => p.id === item.id);
+          if (initial && (initial.image !== item.image || initial.secondaryImage !== item.secondaryImage)) {
+            return { ...item, image: initial.image, secondaryImage: initial.secondaryImage };
+          }
+          return item;
+        });
+      }
+      return INITIAL_PRODUCTS;
     } catch {
       return INITIAL_PRODUCTS;
     }

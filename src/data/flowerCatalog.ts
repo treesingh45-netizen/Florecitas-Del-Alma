@@ -95,8 +95,8 @@ export const INITIAL_PRODUCTS: FlowerProduct[] = [
     bestseller: true,
     shortDescription: 'Deep ruby garden roses layered with lavender lisianthus, dusty miller, and romantic spray stems.',
     fullDescription: 'True love captured in nature’s finest palette. Rich crimson and velvety plum tones paired with soft grey dusty miller and aromatic greenery. Presented in our signature textured wrapping with personalized calligraphy card.',
-    image: 'https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=1000&q=80',
-    secondaryImage: 'https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=1000&q=80',
+    image: 'https://images.pexels.com/photos/7256227/pexels-photo-7256227.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    secondaryImage: 'https://images.pexels.com/photos/7256227/pexels-photo-7256227.jpeg?auto=compress&cs=tinysrgb&w=1200',
     availableColors: ['Crimson & Plum', 'Classic Scarlet', 'Blush & Burgundy'],
     variations: [
       { name: 'Standard', stemCount: '16 Stems', priceDelta: 0, description: 'Standard hand-tied romance bouquet.' },

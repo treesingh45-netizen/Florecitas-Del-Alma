@@ -29,8 +29,8 @@ export const StoryPage: React.FC = () => {
           <div className="relative">
             <div className="aspect-4/3 rounded-sm overflow-hidden border border-[#E9E0D4] shadow-md bg-white">
               <img
-                src="https://images.unsplash.com/photo-1567696911980-2eed69a46042?auto=format&fit=crop&w=900&q=80"
-                alt="Florist table with fresh roses, foliage, and shears in Tolleson AZ studio"
+                src="https://images.pexels.com/photos/6765591/pexels-photo-6765591.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                alt="Smiling woman holding a fresh red rose arrangement"
                 className="w-full h-full object-cover"
               />
             </div>
